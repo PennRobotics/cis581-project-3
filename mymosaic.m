@@ -8,3 +8,4 @@ numImages = length(imgInput);
 for i = 1 : numImages
 
 end
+imgMosaic = imgInput{1};  % TODO(brwr): Placeholder
