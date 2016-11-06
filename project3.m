@@ -6,7 +6,6 @@ clear all; clc
 
 %% Import images
 imageFiles = dir('images');
-numImages = length(imageFiles) - 2;
 for i = 3 : length(imageFiles)
   imagePath = ['images/' imageFiles(i).name];
   images{i - 2} = imread(imagePath);

@@ -2,6 +2,9 @@
 % range [0,255])
 % img_mosaic is the output mosaic
 
-function [img_mosaic] = mymosaic(img_input)
+% TODO(brwr): mymosaic.m
+function [imgMosaic] = mymosaic(imgInput)
+numImages = length(imgInput);
+for i = 1 : numImages
 
 end

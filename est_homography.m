@@ -1,13 +1,14 @@
-function H = est_homography(X,Y,x,y)
-% H = est_homography(X,Y,x,y)
-% Compute the homography matrix from source(x,y) to destination(X,Y)
+% TODO(brwr): est_homography.m
+function H = est_homography(X, Y, x, y)
+% H = est_homography(X, Y, x, y)
+% Compute the homography matrix from source(x, y) to destination(X, Y)
 %
-%    X,Y are coordinates of destination points
-%    x,y are coordinates of source points
-%    X/Y/x/y , each is a vector of n*1, n>= 4
+% X, Y are coordinates of destination points
+% x, y are coordinates of source points
+% Each input variable is a vector of n x 1 (n >= 4)
 %
-%    H is the homography output 3x3
-%   (X,Y, 1)^T ~ H (x, y, 1)^T
+% H is the homography output 3x3
+% (X, Y, 1)^T ~ H(x, y, 1)^T
 
 A = zeros(length(x(:))*2,9);
 

@@ -1,8 +1,10 @@
-function visual_feat( img, cimg, y, x )
+% TODO(brwr): visual_feat.m
+
+function visual_feat(img, cImg, y, x)
     % visualize corner matrix
     figure;
-    imshow(cimg);
-    
+    imshow(cImg);
+
     % visualize feature detection
     figure;
     imshow(img);

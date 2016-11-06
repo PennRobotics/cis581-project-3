@@ -4,6 +4,7 @@
 % descriptor in p2 that matches with the descriptor p1(:,i).
 % If no match is found, m(i) = -1
 
+% TODO(brwr): feat_match.m
 function [match] = feat_match(descs1, descs2)
 
 end

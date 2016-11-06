@@ -1,6 +1,7 @@
 % img is an image
-% cimg is a corner matrix
+% cImg is a corner matrix
 
-function [cimg] = corner_detector(img)
-
+% TODO(brwr): corner_detector.m
+function [cImg] = corner_detector(img)
+cImg = cornermetric(img);
 end
