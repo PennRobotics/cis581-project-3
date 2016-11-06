@@ -3,6 +3,7 @@
 % Author: Brian Wright
 
 clear all; clc
+DEBUG = false;
 
 %% Import images
 imageFiles = dir('images');
