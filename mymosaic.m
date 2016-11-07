@@ -6,6 +6,7 @@
 function [imgMosaic] = mymosaic(imgInput)
 numImages = length(imgInput);
 for i = 1 : numImages
-
+  imgGray = rgb2gray(imgInput{i});
+  imgCorners = corner_detector(imgGray);
 end
 imgMosaic = imgInput{1};  % TODO(brwr): Placeholder
