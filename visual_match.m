@@ -1,5 +1,4 @@
 % TODO(brwr): visual_match.m
-
 function [ output_args ] = visual_match(img1, img2, x1, y1, x2, y2, inlier)
     x1_inlier = x1(inlier ~= 0);
     y1_inlier = y1(inlier ~= 0);

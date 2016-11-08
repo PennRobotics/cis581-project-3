@@ -6,10 +6,10 @@ clear all; clc
 DEBUG = false;
 
 %% Import images
-imageFiles = dir('images');
+imageFiles = dir('images')
 for i = 3 : length(imageFiles)
   imagePath = ['images/' imageFiles(i).name];
-  images{i - 2} = imread(imagePath);
+  images{i - 2} = imread(imagePath, 'png');
   if (DEBUG) figure(i); imagesc(images{i - 2}); end
 end
 

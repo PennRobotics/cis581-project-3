@@ -1,15 +1,14 @@
-% TODO(brwr): visual_feat.m
-
 function visual_feat(img, cImg, y, x)
     % visualize corner matrix
-    figure;
-    imshow(cImg);
+    figure(3);
+    clf
+    imagesc(cImg);
 
     % visualize feature detection
-    figure;
+    figure(4);
+    clf
     imshow(img);
     hold on;
-    scatter(x,y, 'r.');
+    scatter(x, y, 'r.');
     hold off;
 end
-
