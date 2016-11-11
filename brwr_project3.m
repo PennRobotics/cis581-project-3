@@ -4,12 +4,13 @@
 
 clear all; clc
 DEBUG = false;
+DIR_NAME = 'synthetic';
 
 %% Import images
-imageFiles = dir('images')
+imageFiles = dir(DIR_NAME);
 for i = 3 : length(imageFiles)
-  imagePath = ['images/' imageFiles(i).name];
-  images{i - 2} = imread(imagePath, 'png');
+  imagePath = [DIR_NAME '/' imageFiles(i).name];
+  images{i - 2} = imread(imagePath);
   if (DEBUG) figure(i); imagesc(images{i - 2}); end
 end
 
@@ -19,4 +20,3 @@ imageComposite = mymosaic(images);  % TODO(brwr): Ensure uint8, 3-ch cell array 
 %% Output
 figure(1)
 imagesc(imageComposite)
-% TODO(brwr): Save image

@@ -6,8 +6,8 @@ function [x, y, rMax] = anms(cImg, maxPts)
 %   [x, y] = coordinates of corners
 %   rmax = suppression radius used to get max_pts corners
 
-THRESHOLD = 1e-7;
-cImg(cImg < THRESHOLD) = 0;
+CORNER_THRES = 2e-8;
+cImg(cImg < CORNER_THRES) = 0;
 
 x = zeros(maxPts, 1);
 y = zeros(maxPts, 1);
